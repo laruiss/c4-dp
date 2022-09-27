@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "workspaces": [
-    "apps/bundler",
-    "packages/c4-design-system"
+    "apps/c4-vanilla-app-vite",
+    "apps/c4-sveltekit-app",
+    "packages/c4-design-system",
+    "packages/svelte-c4-design-system"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "volta": {
+    "node": "18.9.1",
+    "npm": "8.19.2"
+  }
 }

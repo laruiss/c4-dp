@@ -1,0 +1,638 @@
+//
+// Spacings
+//
+$ds-spacing-1px: 0.0625rem; // 1px
+$ds-spacing-xxxs: 0.125rem; // 2px
+$ds-spacing-xxs: 0.25rem; // 4px
+$ds-spacing-xs: 0.5rem; // 8px
+$ds-spacing-xs-alt: 0.75rem; // 12px
+$ds-spacing-s: 1rem; // 16px
+$ds-spacing-s-alt: 1.25rem; // 20px
+$ds-spacing-m: 1.5rem; // 24px
+$ds-spacing-m-alt: 1.75rem; // 28px
+$ds-spacing-l: 2rem; // 32px
+$ds-spacing-xl: 2.5rem; // 40px
+$ds-spacing-xxl: 3rem; // 48px//
+//  Stroke
+//
+
+$ds-border-width-1: 1px;
+$ds-border-width-2: 2px;
+
+$ds-border-solid: solid;
+$ds-border-dashed: dashed;
+$ds-border-dotted: dotted;
+
+$ds-border1: $ds-border-width-1 $ds-border-solid;
+$ds-border2: $ds-border-width-2 $ds-border-solid;
+// Raw colors tokens.
+// These tokens should not be directly used on components CSS files.
+// We will use colors usage tokens.
+// Check the color palette on Figma: 
+// https://www.figma.com/file/gwE8V1glvYJM2UxivjVvZO/%5BGROUP%5D-Foundation?node-id=2%3A3
+
+// stylelint-disable color-no-hex
+
+$ds-white: #fff;
+$ds-white-10: #e6e6e6;
+
+$ds-black: #121212;
+$ds-black-10: #2b2b2b;
+
+$ds-gray-10: #f7f7f7;
+$ds-gray-50: #e5e5e5;
+$ds-gray-100: #d9d9d9;
+$ds-gray-100-10: #bfbfbf;
+$ds-gray-200: #ccc;
+$ds-gray-300: #bdbdbd;
+$ds-gray-300-10: #a3a3a3;
+$ds-gray-400: #adadad;
+$ds-gray-400-10: #949494;
+$ds-gray-500: #929292;
+$ds-gray-700: #575757;
+$ds-gray-800: #454545;
+$ds-gray-900: #262626;
+
+$ds-red-10: #ffefef;
+$ds-red-100: #ffc9ce;
+$ds-red-100-10: #e5b5b9;
+$ds-red-700: #d30d1f;
+$ds-red-700-10: #ba0b1b;
+$ds-red-700-20: #a10a18;
+$ds-red-800: #c20016;
+$ds-red-900: #aa0d11;
+$ds-red-900-10: #910b0f;
+$ds-red-900-20: #78090c;
+
+$ds-light-green-10: #f9fff2;
+$ds-light-green-100: #dcedc8;
+$ds-light-green-900: #33691e;
+
+$ds-green-10: #f2fcf7;
+$ds-green-100: #b9e9cc;
+$ds-green-900: #006223;
+$ds-green-900-10: #00471a;
+
+$ds-orange-10: #fff7f0;
+$ds-orange-100: #ffdab4;
+$ds-orange-900: #f8761e;
+
+$ds-deep-orange-10: #fff4f2;
+$ds-deep-orange-100: #fbcaba;
+$ds-deep-orange-900: #b33308;
+$ds-deep-orange-900-10: #b31608;
+
+$ds-blue-gray-10: #f0f3f6;
+$ds-blue-gray-100: #cfd8dc;
+$ds-blue-gray-900: #263238;
+
+$ds-light-blue-10: #f5faff;
+$ds-light-blue-100: #b9ddff;
+$ds-light-blue-600: #0083fa;
+$ds-light-blue-700: #0970e6;
+$ds-light-blue-700-10: #0863cc;
+$ds-light-blue-700-20: #0757b2;
+$ds-light-blue-900: #173eb4;
+$ds-light-blue-900-10: #14369c;
+
+$ds-blue-10: #e8f8ff;
+$ds-blue-100: #8cd1f0;
+$ds-blue-100-10: #7dbbd6;
+$ds-blue-700: #004f9b;
+$ds-blue-700-10: #004282;
+$ds-blue-700-20: #003569;
+$ds-blue-900: #002468;
+
+$ds-pink-10: #fff0f3;
+$ds-pink-100: #efb8c6;
+$ds-pink-100-10: #d6a5b1;
+$ds-pink-700: #a42747;
+$ds-pink-700-10: #8a213c;
+$ds-pink-700-20: #701b31;
+$ds-pink-900: #6a1d3b;
+
+$ds-indigo-10: #e5e9f0;
+$ds-indigo-100: #bdc7da;
+$ds-indigo-500: #254f9a;
+$ds-indigo-900: #052351;
+
+$ds-purple-10: #fdf2ff;
+$ds-purple-100: #e1bee7;
+$ds-purple-700: #7b1fa2;
+$ds-purple-900: #4a148c;
+
+$ds-deep-purple-10: #f9f5ff;
+$ds-deep-purple-100: #d1c4e9;
+$ds-deep-purple-900: #311b92;
+
+$ds-cyan-10: #edfdff;
+$ds-cyan-100: #b2ebf2;
+$ds-cyan-900: #006064;
+
+$ds-teal-10: #ebfff9;
+$ds-teal-100: #afe0d1;
+$ds-teal-900: #004f2b;
+
+$ds-lime-10: #fdfff0;
+$ds-lime-100: #f0f4c3;
+$ds-lime-900: #827717;
+
+$ds-yellow-10: #fffef2;
+$ds-yellow-100: #fff9c4;
+
+$ds-amber-10: #fffbf0;
+$ds-amber-100: #ffecb3;
+
+$ds-brown-10: #fff9eb;
+$ds-brown-100: #f0dab4;
+$ds-brown-900: #5c2e1d;
+
+// PRIMARY
+// Main
+$ds-primary-alternative: #00a881;
+$ds-primary-dark: #0e3368;
+
+// Brand
+$ds-brand-blue: #095ba5;
+$ds-brand-red: #e81e26;
+
+// Specifics
+$ds-loyalty: #0e3368;
+$ds-loyalty-background: #cdeefd;
+$ds-promotion: #e81e26;
+$ds-promotion-2: #0e3368;
+$ds-promotion-background: #fff78f;
+$ds-promotion-background-2: #cdeefd;
+$ds-marketplace: #8f2344;
+$ds-marketplace-light: #c791a1;
+
+// PALETTE
+// Greys
+$ds-grey-80: #f7f7f7;
+$ds-grey-40: #d2d2d2;
+$ds-grey-5: #303336;
+
+// Colors
+$ds-green-light: #b0eac7;
+$ds-green: #4ccd8a;
+$ds-green-dark: #058567;
+
+$ds-orange: #ff8000;
+$ds-orange-alt: #ea551e;
+$ds-orange-dark: #cc4010;
+
+$ds-red-light: #ffbdbd;
+$ds-red-1: #e81e26;
+$ds-red-2: #ef473a;
+$ds-red-dark: #aa0d11;
+
+$ds-blue-sky : #09bde6;
+$ds-blue-light: #c4efff;
+$ds-blue-turquoise: #f0fbfc;
+$ds-grey-blue: #e6f1fc;
+
+$ds-yellow-extra-light: #fffde5;
+$ds-yellow-light: #fff78f;
+// rating star
+$ds-star-yellow: #ffb74b;
+
+// GRADIENT
+$ds-gradient-promotion:  linear-gradient(90deg, #ef473a 0%, #cb2d3e 100%);
+$ds-gradient-loyalty: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+
+// ===========
+//  Deprecated
+// ===========
+
+// Other
+$ds-green-dark-alt: #199a57;
+$ds-red-light-alt: #ffccbd;
+$ds-red-lighter: #f8eeee;
+$ds-red-light-medium: #ffccbd;
+$ds-blue-marine: #1a4ea5;
+$ds-blue-dark: #0e3368;
+$ds-blue-dark-alt: #041463;
+$ds-blue-darker: #091f40;
+$ds-blue-lighter: #eef6ff;
+$ds-blue-light-medium: #e4f1fd;
+$ds-yellow-dark: #efb91b;
+$ds-yellow-lighter: #faf4e7;
+$ds-yellow-light-medium: #fff87e;
+$ds-green-honeydew: #f0f8e5;
+
+// Opening Hour variant
+$ds-opening-hour-1: #a7f6cd80;
+$ds-opening-hour-2: #f3caccbc;
+$ds-opening-hour-3: #fca9adbc;
+
+// Brand variant
+$ds-brand-market-1: #db3832;
+$ds-brand-market-2: #ef1d21;
+$ds-brand-express-1: #f36424;
+$ds-brand-express-2: #f89d70;
+$ds-brand-bio-1: #006933;
+$ds-brand-bio-2: #006933;
+$ds-brand-bon-app-1: #c00041;
+$ds-brand-bon-app-2: #c00041;
+$ds-brand-city-1: #60aa40;
+$ds-brand-city-2: #60aa40;
+$ds-brand-montagne-1: #cad401;
+$ds-brand-montagne-2: #cad401;
+$ds-brand-contact-1: #92af2e;
+$ds-brand-contact-2: #92af2e;
+
+
+//
+// Sizing
+//
+$ds-icon-sizing-xs: 0.5rem; // 8px
+$ds-icon-sizing-xs-alt: 0.75rem; // 12px
+$ds-icon-sizing-s: 1rem; // 16px
+$ds-icon-sizing-s-alt: 1.25rem; // 20px
+$ds-icon-sizing-m: 1.5rem; // 24px
+$ds-icon-sizing-m-alt: 1.75rem; // 28px
+$ds-icon-sizing-l: 2rem; // 32px
+$ds-icon-sizing-xl: 2.5rem; // 40px
+$ds-icon-sizing-xxl: 3rem; // 48px
+$ds-icon-sizing-xxl-alt: 4rem; // 64px
+$ds-icon-sizing-xxxl: 9rem; // 144px
+
+//
+// Font sizes
+//
+$ds-root-default: 16px;
+
+$ds-font-size-xxs-alt: 0.5rem; // 8px
+$ds-font-size-xxs: 0.625rem; // 10px
+$ds-font-size-xs: 0.75rem; // 12px
+$ds-font-size-s: 0.875rem; // 14px
+$ds-font-size-m: 1rem; // 16px
+$ds-font-size-l: 1.25rem; // 20px
+$ds-font-size-xl: 1.5rem; // 24px
+$ds-font-size-xxl: 1.75rem; // 28px
+$ds-font-size-xxl-alt: 2rem; // 32px
+$ds-font-size-xxxl: 2.5rem; // 40px
+//
+// Font weight
+//
+$ds-font-weight-bold: 700;
+$ds-font-weight-regular: 400;
+$ds-font-weight-light: 300;
+
+
+//
+// Radius
+//
+$ds-radius-s: 2px;
+$ds-radius-m: 4px;
+$ds-radius-l: 8px;
+$ds-radius-l-alt: 0.75rem;
+$ds-radius-xl-alt: 1rem;
+$ds-radius-xl: 24px;
+$ds-radius-round: 7rem;
+
+
+
+// Colors usage tokens.
+// Check the color palette on Figma: 
+// https://www.figma.com/file/gwE8V1glvYJM2UxivjVvZO/%5BGROUP%5D-Foundation?node-id=2%3A3
+
+// Content Main
+$ds-color-content-main-primary: $ds-black;
+$ds-color-content-main-secondary: $ds-gray-800;
+$ds-color-content-main-tertiary: $ds-gray-700;
+$ds-color-content-main-disabled: $ds-gray-500;
+
+// Content reversed (for reversed backgrounds)
+$ds-color-content-reversed-primary: $ds-white;
+$ds-color-content-reversed-secondary: $ds-gray-50;
+$ds-color-content-reversed-tertiary: $ds-gray-100;
+$ds-color-content-reversed-disabled: $ds-gray-300;
+
+// Content Functional
+$ds-color-content-functional-negative: $ds-red-900;
+$ds-color-content-functional-positive: $ds-green-900;
+$ds-color-content-functional-warning: $ds-deep-orange-900;
+$ds-color-content-functional-information: $ds-light-blue-900;
+
+// Content Specific
+$ds-color-content-specific-loyalty: $ds-blue-900;
+$ds-color-content-specific-promotion: $ds-red-900;
+$ds-color-content-specific-marketplace: $ds-pink-900;
+
+// Background main
+$ds-color-background-main-primary: $ds-white;
+$ds-color-background-main-secondary: $ds-gray-10;
+$ds-color-background-main-unchecked: $ds-gray-50;
+$ds-color-background-main-unchecked-hover: $ds-gray-200;
+$ds-color-background-main-checked: $ds-light-blue-700;
+$ds-color-background-main-checked-hover: $ds-light-blue-700-10;
+$ds-color-background-main-prefilled: $ds-light-blue-10;
+
+// Background disabled
+$ds-color-background-disabled-primary: $ds-white;
+$ds-color-background-disabled-secondary: $ds-gray-10;
+$ds-color-background-disabled-unchecked: $ds-gray-50;
+$ds-color-background-disabled-checked: $ds-gray-200;
+
+// Background reversed
+$ds-color-background-reversed-primary: $ds-black;
+$ds-color-background-reversed-secondary: $ds-gray-900;
+
+// Background functional
+$ds-color-background-functional-positive: $ds-green-10;
+$ds-color-background-functional-negative: $ds-red-10;
+$ds-color-background-functional-information: $ds-light-blue-10;
+$ds-color-background-functional-warning: $ds-orange-10;
+
+// Background specific
+$ds-color-background-specific-loyalty: $ds-blue-10;
+$ds-color-background-specific-promotion: $ds-red-10;
+$ds-color-background-specific-marketplace: $ds-pink-10;
+
+// Border main
+$ds-color-border-main-primary: $ds-gray-100;
+$ds-color-border-main-primary-hover: $ds-gray-100-10;
+$ds-color-border-main-secondary: $ds-gray-300;
+$ds-color-border-main-secondary-hover: $ds-gray-300-10;
+$ds-color-border-main-unchecked: $ds-gray-400;
+$ds-color-border-main-unchecked-hover: $ds-gray-400-10;
+$ds-color-border-main-checked: $ds-light-blue-700;
+$ds-color-border-main-checked-hover: $ds-light-blue-700-10;
+$ds-color-border-main-active: $ds-light-blue-700;
+
+// Border disabled
+$ds-color-border-disabled-primary: $ds-gray-50;
+$ds-color-border-disabled-secondary: $ds-gray-100;
+$ds-color-border-disabled-unchecked: $ds-gray-300;
+$ds-color-border-disabled-checked: $ds-gray-400;
+
+// Border functional
+$ds-color-border-functional-negative: $ds-red-900;
+$ds-color-border-functional-negative-hover: $ds-red-900-10;
+$ds-color-border-functional-positive: $ds-green-900;
+$ds-color-border-functional-positive-hover: $ds-green-900-10;
+$ds-color-border-functional-information: $ds-light-blue-900;
+$ds-color-border-functional-information-hover: $ds-light-blue-900-10;
+$ds-color-border-functional-warning: $ds-deep-orange-900;
+$ds-color-border-functional-warning-hover: $ds-deep-orange-900-10;
+
+// Border specific
+$ds-color-border-specific-loyalty: $ds-blue-100;
+$ds-color-border-specific-loyalty-hover: $ds-blue-100-10;
+$ds-color-border-specific-promotion: $ds-red-100;
+$ds-color-border-specific-promotion-hover: $ds-red-100-10;
+$ds-color-border-specific-marketplace: $ds-pink-100;
+$ds-color-border-specific-marketplace-hover: $ds-pink-100-10;
+
+// Icon main
+$ds-color-icon-main-primary: $ds-black;
+$ds-color-icon-main-secondary: $ds-gray-800;
+$ds-color-icon-main-tertiary: $ds-gray-700;
+$ds-color-icon-main-disabled: $ds-gray-500;
+$ds-color-icon-main-checked: $ds-light-blue-700;
+
+// Icon reversed
+$ds-color-icon-reversed-primary: $ds-white;
+$ds-color-icon-reversed-secondary: $ds-gray-50;
+$ds-color-icon-reversed-tertiary: $ds-gray-100;
+$ds-color-icon-reversed-disabled: $ds-gray-300;
+
+// Icon functional
+$ds-color-icon-functional-positive: $ds-green-900;
+$ds-color-icon-functional-negative: $ds-red-900;
+$ds-color-icon-functional-information: $ds-light-blue-600;
+$ds-color-icon-functional-warning: $ds-orange-900;
+
+// Icon specific
+$ds-color-icon-specific-loyalty: $ds-blue-900;
+$ds-color-icon-specific-promotion: $ds-red-900;
+$ds-color-icon-specific-marketplace: $ds-pink-900;
+
+// Brand
+$ds-color-brand-red: $ds-red-800;
+$ds-color-brand-blue: $ds-indigo-500;
+$ds-color-brand-gray: $ds-blue-gray-10;
+
+// Action primary
+$ds-color-action-main-primary: $ds-light-blue-700;
+$ds-color-action-main-primary-hover: $ds-light-blue-700-10;
+$ds-color-action-main-primary-active: $ds-light-blue-700-20;
+
+// Action monochrome
+$ds-color-action-monochrome-primary: $ds-black;
+$ds-color-action-monochrome-primary-hover: $ds-black-10;
+$ds-color-action-monochrome-primary-active: $ds-gray-800;
+
+// Action reversed
+$ds-color-action-reversed-primary: $ds-white;
+$ds-color-action-reversed-primary-hover: $ds-white-10;
+$ds-color-action-reversed-primary-active: $ds-gray-200;
+
+// Action loyalty
+$ds-color-action-loyalty-primary: $ds-blue-700;
+$ds-color-action-loyalty-primary-hover: $ds-blue-700-10;
+$ds-color-action-loyalty-primary-active: $ds-blue-700-20;
+
+// Action promotion
+$ds-color-action-promotion-primary: $ds-red-700;
+$ds-color-action-promotion-primary-hover: $ds-red-700-10;
+$ds-color-action-promotion-primary-active: $ds-red-700-20;
+
+// Action marketplace
+$ds-color-action-marketplace-primary: $ds-pink-700;
+$ds-color-action-marketplace-primary-hover: $ds-pink-700-10;
+$ds-color-action-marketplace-primary-active: $ds-pink-700-10;
+
+// Action negative
+$ds-color-action-negative-primary: $ds-red-900;
+$ds-color-action-negative-primary-hover: $ds-red-900-10;
+$ds-color-action-negative-primary-active: $ds-red-900-20;
+
+// Action visited
+$ds-color-action-visited: $ds-purple-700;
+
+// Action focus
+$ds-color-action-focus: $ds-light-blue-700;
+
+// Decorative background main
+$ds-color-decorative-background-main-lilac: $ds-purple-10;
+$ds-color-decorative-background-main-lavender: $ds-deep-purple-10;
+$ds-color-decorative-background-main-misty: $ds-indigo-10;
+$ds-color-decorative-background-main-celeste: $ds-light-blue-10;
+$ds-color-decorative-background-main-aqua: $ds-cyan-10;
+$ds-color-decorative-background-main-mint: $ds-teal-10;
+$ds-color-decorative-background-main-lagoon: $ds-green-10;
+$ds-color-decorative-background-main-tea: $ds-light-green-10;
+$ds-color-decorative-background-main-lemon: $ds-lime-10;
+$ds-color-decorative-background-main-banana: $ds-yellow-10;
+$ds-color-decorative-background-main-sahara: $ds-amber-10;
+$ds-color-decorative-background-main-champagne: $ds-orange-10;
+$ds-color-decorative-background-main-peach: $ds-deep-orange-10;
+$ds-color-decorative-background-main-vanilla: $ds-brown-10;
+$ds-color-decorative-background-main-casper: $ds-blue-gray-10;
+
+// Decorative background reversed
+$ds-color-decorative-background-reversed-rasin: $ds-purple-900;
+$ds-color-decorative-background-reversed-electric: $ds-deep-purple-900;
+$ds-color-decorative-background-reversed-abyss: $ds-indigo-900;
+$ds-color-decorative-background-reversed-royal: $ds-light-blue-900;
+$ds-color-decorative-background-reversed-sacramento: $ds-cyan-900;
+$ds-color-decorative-background-reversed-forest: $ds-teal-900;
+$ds-color-decorative-background-reversed-jungle: $ds-green-900;
+$ds-color-decorative-background-reversed-scottish: $ds-light-green-900;
+$ds-color-decorative-background-reversed-olive: $ds-lime-900;
+$ds-color-decorative-background-reversed-ginger: $ds-deep-orange-900;
+$ds-color-decorative-background-reversed-walnut: $ds-brown-900;
+$ds-color-decorative-background-reversed-graphite: $ds-blue-gray-900;
+$ds-color-decorative-background-reversed-charcoal: $ds-gray-900;
+
+// Decorative border main
+$ds-color-decorative-border-main-lilac: $ds-purple-100;
+$ds-color-decorative-border-main-lavender: $ds-deep-purple-100;
+$ds-color-decorative-border-main-misty: $ds-indigo-100;
+$ds-color-decorative-border-main-celeste: $ds-light-blue-100;
+$ds-color-decorative-border-main-aqua: $ds-cyan-100;
+$ds-color-decorative-border-main-mint: $ds-teal-100;
+$ds-color-decorative-border-main-lagoon: $ds-green-100;
+$ds-color-decorative-border-main-tea: $ds-light-green-100;
+$ds-color-decorative-border-main-lemon: $ds-lime-100;
+$ds-color-decorative-border-main-banana: $ds-yellow-100;
+$ds-color-decorative-border-main-sahara: $ds-amber-100;
+$ds-color-decorative-border-main-champagne: $ds-orange-100;
+$ds-color-decorative-border-main-peach: $ds-deep-orange-100;
+$ds-color-decorative-border-main-vanilla: $ds-brown-100;
+$ds-color-decorative-border-main-casper: $ds-blue-gray-100;
+
+// !! DEPRECATED TOKENS !!
+// You shouldn't use the tokens below anymore. 
+// Please check with the Design System team or the UX team before using these
+
+// Interactive usage
+$ds-color-interactive-1: $ds-light-blue-700;
+$ds-color-interactive-2: $ds-primary-dark;
+$ds-color-interactive-3: $ds-gray-500;
+$ds-color-interactive-4: $ds-gray-50;
+$ds-color-interactive-5: $ds-gray-700;
+$ds-color-interactive-6: $ds-grey-5;
+$ds-color-interactive-7: $ds-black;
+$ds-color-interactive-9: $ds-blue-dark;
+$ds-color-interactive-10: $ds-red-1;
+$ds-color-interactive-11: $ds-primary-alternative;
+
+// Standard Usage
+$ds-color-standard-1: $ds-white;
+$ds-color-standard-2: $ds-primary-dark;
+$ds-color-standard-3: $ds-gray-700;
+$ds-color-standard-4: $ds-gray-500;
+$ds-color-standard-5: $ds-gray-50;
+$ds-color-standard-6: $ds-grey-80;
+$ds-color-standard-7: $ds-black;
+$ds-color-standard-8: $ds-grey-40;
+$ds-color-standard-9: $ds-grey-blue;
+$ds-color-standard-10: $ds-light-blue-700;
+$ds-color-standard-11: $ds-grey-5;
+$ds-color-standard-12: $ds-green-dark;
+$ds-color-standard-13: $ds-star-yellow;
+$ds-color-standard-14: $ds-gray-500;
+$ds-color-standard-15: $ds-blue-dark-alt;
+$ds-color-standard-16: $ds-loyalty-background;
+$ds-color-standard-17: $ds-gray-700;
+
+// Warning Usage
+$ds-color-warning-1: $ds-red-1;
+$ds-color-warning-2: $ds-red-light-alt;
+$ds-color-warning-3: $ds-red-lighter;
+$ds-color-warning-4: $ds-yellow-lighter;
+$ds-color-warning-5: $ds-grey-blue;
+
+// Validation Usage
+$ds-color-validation-1: $ds-green;
+$ds-color-validation-2: $ds-green-light;
+$ds-color-validation-3: $ds-primary-alternative;
+$ds-color-validation-4: $ds-green-dark;
+
+// Promotion Usage
+$ds-color-promotion-1: $ds-yellow-light;
+$ds-color-promotion-2: $ds-red-1;
+
+// Highlight Usage
+$ds-color-highlight-1: $ds-red-1;
+$ds-color-highlight-2: $ds-green-dark-alt;
+$ds-color-highlight-3: $ds-red-900;
+$ds-color-highlight-4: $ds-red-2;
+$ds-color-highlight-5: $ds-light-blue-700;
+
+// Loyalty
+$ds-color-loyalty-1: $ds-blue-light;
+$ds-color-loyalty-2: $ds-grey-blue;
+$ds-color-loyalty-challenge: $ds-blue-marine;
+
+// pass
+$ds-color-pass-1: $ds-blue-turquoise;
+
+// Status
+$ds-color-status-1: $ds-green;
+$ds-color-status-2: $ds-orange;
+$ds-color-status-3: $ds-red-1;
+$ds-color-status-4: $ds-orange-alt;
+$ds-color-status-1-dark: $ds-green-dark-alt;
+
+// Marketplace
+$ds-color-marketplace-1: $ds-marketplace;
+$ds-color-marketplace-2: $ds-brand-red;
+
+//Notification
+$ds-color-notification-info: $ds-blue-light;
+$ds-color-notification-warning: $ds-orange-100;
+
+// Background Usage
+$ds-color-background-1: $ds-green-10;
+$ds-color-background-2: $ds-red-10;
+$ds-color-background-3: $ds-yellow-extra-light;
+$ds-color-background-4: $ds-orange-10;
+$ds-color-background-5: $ds-light-blue-10;
+$ds-color-background-6: $ds-grey-blue;
+$ds-color-background-7: $ds-white;
+$ds-color-background-9: $ds-color-standard-5;
+$ds-color-background-10: $ds-orange-dark;
+$ds-color-background-11: $ds-blue-turquoise;
+
+// Border Usage
+$ds-color-border-1: $ds-green-light;
+$ds-color-border-2: $ds-red-light-medium;
+$ds-color-border-3: $ds-yellow-light-medium;
+$ds-color-border-4: $ds-orange-100;
+$ds-color-border-5: $ds-blue-light-medium;
+$ds-color-border-8: $ds-grey-40;
+$ds-color-border-9: $ds-blue-light;
+$ds-color-border-10: $ds-primary-dark;
+$ds-color-border-11: $ds-gray-500;
+$ds-color-border-12: $ds-gray-50;
+
+// Marker
+$ds-color-marker-default-1: $ds-brand-blue;
+$ds-color-marker-default-2: $ds-brand-red;
+$ds-color-marker-market-1: $ds-brand-market-1;
+$ds-color-marker-market-2: $ds-brand-market-2;
+$ds-color-marker-city-1: $ds-brand-city-1;
+$ds-color-marker-city-2: $ds-brand-city-2;
+$ds-color-marker-express-1: $ds-brand-express-1;
+$ds-color-marker-express-2: $ds-brand-express-2;
+$ds-color-marker-bio-1: $ds-brand-bio-1;
+$ds-color-marker-bio-2: $ds-brand-bio-2;
+$ds-color-marker-bon-app-1: $ds-brand-bon-app-1;
+$ds-color-marker-bon-app-2: $ds-brand-bon-app-2;
+$ds-color-marker-montagne-1: $ds-brand-montagne-1;
+$ds-color-marker-montagne-2: $ds-brand-montagne-2;
+$ds-color-marker-contact-1: $ds-brand-contact-1;
+$ds-color-marker-contact-2: $ds-brand-contact-2;
+
+// Banner
+$ds-color-banner-subscription-1: $ds-green-honeydew;
+
+
+
+$base-line-height: 40px;
+$night-blue: #0e3368;
+$off-night-blue: rgba($night-blue, 0.4);
